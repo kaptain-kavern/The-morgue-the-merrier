@@ -5,7 +5,7 @@ All graphical assets and original ideas/code are from [A11 Terra Firma Mod Pack]
 ## Description
 Add the possibility to bag bodies.
 
-Bags can be crafted at both tailoring benches for x unit of any cloth types.
+Bags can be crafted at both tailoring benches for 20 unit of any cloth types.
 
 Filling bag with bodies is a quick task and take place at a new building : the morgue slab. Worth to note : Bagging a corpse automatically strip it (all you have to do is unforbid corpses and be sure to set a bill at the slab - just like at the butcher table or crematorium)
 
