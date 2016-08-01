@@ -43,3 +43,6 @@ A bagged body doesn't trigger bad mood (maybe they should still but less strong 
 ## Also add : 
 - Series of multi-purpose racked storage in several shapes ![Large rack storage](../Textures/Things/Buildings/Furniture/StorageLarge.png) They also should support roof as a wall (for your very big storage urges)
 - A neon lamp
+
+## Wild unorganised notes
+- Maybe add a way to reclaim dirty/used bags and clean/rehabilitate them
