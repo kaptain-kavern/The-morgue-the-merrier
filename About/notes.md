@@ -9,7 +9,7 @@ Bags can be crafted at both tailoring benches for 20 unit of any cloth types.
 
 Filling bag with bodies is a quick task and take place at a new building : the morgue slab. ![Morgue Slab](/Textures/Things/Buildings/Production/MorgueSlab.png)
 
-Worth to note : Bagging a corpse automatically strip it (all you have to do is unforbid corpses and be sure to set a bill at the slab - just like at the butcher table or crematorium)
+Worth to note : Bagging a corpse automatically strip it (all you have to do is unforbid corpses and be sure to have a bill set at the slab - just like at the butcher table or crematorium)
 
 A bagged body doesn't trigger bad mood (maybe they should still but less strong debuff then). A bagged body still need to be refrigerated (they rot in 4 days).
 
