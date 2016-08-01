@@ -46,3 +46,4 @@ A bagged body doesn't trigger bad mood (maybe they should still but less strong 
 
 ## Wild unorganised notes
 - Maybe add a way to reclaim dirty/used bags and clean/rehabilitate them
+- Bagged bodies should be able to be used by hoppers in order to be automatically used in different to-be-define contraption
