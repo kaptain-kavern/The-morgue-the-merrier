@@ -1,0 +1,89 @@
+﻿<RecipeDefs>
+
+	<RecipeDef>
+    <defName>MakingBodyBag</defName>
+    <label>create bodybag</label>
+    <description>Making bodybags, to store bodies.</description>
+    <jobString>Creating bodybag.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <recipeUsers>
+    	<li>ElectricTailoringBench</li>
+    	<li>HandTailoringBench</li>
+    </recipeUsers>
+	    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Textiles</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BodyBagEmpty>1</BodyBagEmpty>
+    </products>
+    <fixedIngredientFilter>
+		<categories>
+            <li>Textiles</li>
+          </categories>
+    </fixedIngredientFilter>
+	<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+	<workSkill>Crafting</workSkill>
+	</RecipeDef> 
+  
+<RecipeDef>
+    <defName>FillingBodyBag</defName>
+    <label>filling bodybag</label>
+    <description>Filling bodybags, so you don't see them no more.</description>
+    <jobString>Filling bodybag.</jobString>
+    <workAmount>100</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter><categories><li>Corpses</li></categories></filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter><thingDefs><li>BodyBagEmpty</li></thingDefs></filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <recipeUsers><li>TableMorgueSlab</li></recipeUsers>
+    <products>
+      <BodyBagFilled>1</BodyBagFilled>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <thingDefs>
+        <li>BodyBagEmpty</li>
+      </thingDefs>
+      <exceptedCategories>
+        <li>CorpsesMechanoid</li>
+        <li>CorpsesAnimal</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>BodyBagFilled</li>
+      </exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Human_Corpse</li>
+        <li>BodyBagEmpty</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+  </RecipeDef>
+  
+</RecipeDefs> 

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="Bodybagbase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>5</stackLimit>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  <!-- Bodybags -->
+  
+	<ThingDef ParentName="Bodybagbase">
+    <defName>BodyBagEmpty</defName>
+    <label>empty bodybag</label>
+    <description>A bodybag, ready to be filled.</description>
+    <graphicData>
+	<texPath>Things/Items/BodyBagE</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>20</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    </ThingDef>
+
+	<ThingDef ParentName="Bodybagbase">
+    <defName>BodyBagFilled</defName>
+    <label>filled bodybag</label>
+    <description>A bodybag, with a body in it.</description>
+    <graphicData>
+	<texPath>Things/Items/BodyBagF</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>CorpsesHumanlike</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable"><daysToRotStart>4</daysToRotStart></li>
+    </comps>
+  </ThingDef>
+	
+  </Resources>
