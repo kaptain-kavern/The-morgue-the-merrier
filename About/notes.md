@@ -1,4 +1,8 @@
 # Morgue mods
+
+## History
+All graphical assets and original ideas/code are from [A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663) by *Saularian*
+## Description
 Add the possibility to bag bodies.
 
 Bags can be crafted at both tailoring benches for x unit of any cloth types.
