@@ -1,4 +1,4 @@
-# Morgue mods
+# Morgue mod Prototype
 
 ## History
 All graphical assets and original ideas/code are from [A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663) by *Saularian*
