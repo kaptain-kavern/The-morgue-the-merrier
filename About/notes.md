@@ -37,6 +37,7 @@ A bagged body doesn't trigger bad mood (maybe they should still but less strong 
   - Maybe make "salvaged bionics" that need recipe "salvage bionics" + components = functional bionics (that way more different skills will be needed - adding to difficulty)
 - turned into classic combustible
 - run a corpses fueled generator (a gaz powered one)
+  - something different than [CuproPanda's Corpse Generator](https://github.com/cuproPanda/CFG) - Bodies in bag ~~should be~~ **are** able to be use by CuproPanda's generator
 - ~~normal burrying /~~Crematation (i would like to implement a early/tribal crematorium)
   - Apparently nearly impossible to burry modded items in grave (Corpses have special defs generated dynamically - in DLLs not in the XML files)
   - Add early wood fueled way of cremate bodies
