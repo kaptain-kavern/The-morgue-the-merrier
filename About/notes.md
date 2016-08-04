@@ -1,7 +1,7 @@
 # Morgue mod Prototype
 
 ## History
-All graphical assets and original ideas/code are from [A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663) by *Saularian*
+All graphical assets and original ideas/code are from [A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663) by **Saularian**
 ## Description
 Add the possibility to bag bodies.
 
@@ -32,7 +32,7 @@ A bagged body doesn't trigger bad mood (maybe they should still but less strong 
   - 2 Legs
   - 2 Foots
 - harvest artificial parts :
-  - If possible, recovered parts should have increased infections chances
+  - If possible, recovered parts should have increased infections chances or they can function at 50% efficiency for a little amount of time (how the hell should i code that!)
   - I was for 33% chance of destroying it, minimum
   - Maybe make "salvaged bionics" that need recipe "salvage bionics" + components = functional bionics (that way more different skills will be needed - adding to difficulty)
 - turned into classic combustible
@@ -50,3 +50,4 @@ A bagged body doesn't trigger bad mood (maybe they should still but less strong 
 ## Wild unorganised notes
 - Maybe add a way to reclaim dirty/used bags and clean/rehabilitate them
 - Bagged bodies should be able to be used in hoppers in order to be automatically used in different to-be-define contraptions
+- Storages should be in two categories, refrigerated and not-refrigerated

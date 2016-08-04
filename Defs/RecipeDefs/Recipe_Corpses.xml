@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>HarvestLimbsFromBBag</defName>
+    <label>Harvesting Limbs</label>
+    <description>Harvest 2 legs and 2 arms</description>
+    <jobString>chopping limbs.</jobString>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <recipeUsers><li>TableMorgueSlab</li></recipeUsers> 
+    <workAmount>800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BodyBagFilled</li>
+          </thingDefs>
+        </filter>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BodyBagFilled</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <NaturalLeg>2</NaturalLeg>
+      <NaturalArm>2</NaturalArm>
+    </products>
+    <skillRequirements>
+      <li>
+        <skill>Medecine</skill>
+        <minLevel>8</minLevel>
+      </li>
+    </skillRequirements>
+    <workSkill>Medicine</workSkill>
+  </RecipeDef>
+
+</RecipeDefs>

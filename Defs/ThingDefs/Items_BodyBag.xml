@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Resources>
 
-
   <!-- =========== bases =========== -->
 
   <ThingDef Name="Bodybagbase" Abstract="True">
@@ -21,9 +20,9 @@
     <rotatable>false</rotatable>
     <pathCost>15</pathCost>
   </ThingDef>
-  
+
   <!-- Bodybags -->
-  
+
 	<ThingDef ParentName="Bodybagbase">
     <defName>BodyBagEmpty</defName>
     <label>empty bodybag</label>
@@ -68,5 +67,5 @@
       <li Class="CompProperties_Rottable"><daysToRotStart>4</daysToRotStart></li>
     </comps>
   </ThingDef>
-	
+
   </Resources>
