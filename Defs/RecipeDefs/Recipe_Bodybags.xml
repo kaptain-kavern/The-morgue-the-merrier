@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
-﻿<RecipeDefs>
-
-	<RecipeDef>
-    <defName>MakingBodyBag</defName>
-    <label>create bodybag</label>
-    <description>Making bodybags, to store bodies.</description>
-    <jobString>Creating bodybag.</jobString>
-    <workAmount>1000</workAmount>
-    <workSpeedStat>TailoringSpeed</workSpeedStat>
-    <effectWorking>Tailor</effectWorking>
-    <soundWorking>Recipe_Tailor</soundWorking>
-    <recipeUsers>
-    	<li>ElectricTailoringBench</li>
-    	<li>HandTailoringBench</li>
-    </recipeUsers>
-	    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Textiles</li>
-          </categories>
-        </filter>
-        <count>20</count>
-      </li>
-    </ingredients>
-    <products>
-      <BodyBagEmpty>1</BodyBagEmpty>
-    </products>
-    <fixedIngredientFilter>
-		<categories>
-            <li>Textiles</li>
-          </categories>
-    </fixedIngredientFilter>
-	<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-	<workSkill>Crafting</workSkill>
-	</RecipeDef>
+<RecipeDefs><RecipeDef>
+  <defName>MakingBodyBag</defName>
+  <label>create bodybag</label>
+  <description>Making bodybags, to store bodies.</description>
+  <jobString>Creating bodybag.</jobString>
+  <workAmount>1000</workAmount>
+  <workSpeedStat>TailoringSpeed</workSpeedStat>
+  <effectWorking>Tailor</effectWorking>
+  <soundWorking>Recipe_Tailor</soundWorking>
+  <recipeUsers>
+    <li>ElectricTailoringBench</li>
+    <li>HandTailoringBench</li>
+  </recipeUsers>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>Textiles</li>
+        </categories>
+      </filter>
+      <count>20</count>
+    </li>
+  </ingredients>
+  <products>
+    <BodyBagEmpty>1</BodyBagEmpty>
+  </products>
+  <fixedIngredientFilter>
+    <categories>
+      <li>Textiles</li>
+    </categories>
+  </fixedIngredientFilter>
+  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+  <workSkill>Crafting</workSkill>
+</RecipeDef>
 
 <RecipeDef>
     <defName>FillingBodyBag</defName>
@@ -47,6 +45,9 @@
     <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<recipeUsers>
+			<li>TableMorgueSlab</li>
+		</recipeUsers>
     <ingredients>
       <li>
         <filter><categories><li>Corpses</li></categories></filter>
@@ -57,7 +58,6 @@
         <count>1</count>
       </li>
     </ingredients>
-    <recipeUsers><li>TableMorgueSlab</li></recipeUsers>
     <products>
       <BodyBagFilled>1</BodyBagFilled>
     </products>
@@ -83,8 +83,7 @@
       </thingDefs>
       <specialFiltersToAllow>
         <li>AllowCorpsesStranger</li>
-				<li>AllowRotten</li>
-      </specialFiltersToAllow>
+			</specialFiltersToAllow>
     </defaultIngredientFilter>
   </RecipeDef>
 

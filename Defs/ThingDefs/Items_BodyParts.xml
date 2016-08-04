@@ -39,28 +39,28 @@
   <!-- natural -->
 
   <ThingDef ParentName="BodyPartNaturalBase">
-    <defName>NaturalLeg</defName>
-    <label>natural leg</label>
-    <description>Natural (...surgically harvested...) human leg.</description>
+    <defName>PoorlyHarvestedNaturalLeg</defName>
+    <label>poorly harvested leg</label>
+    <description>Natural (...brutaly harvested...) human leg.</description>
     <graphicData>
       <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>100</MarketValue>
     </statBases>
   </ThingDef>
 
   <ThingDef ParentName="BodyPartNaturalBase">
-    <defName>NaturalArm</defName>
-    <label>natural leg</label>
-    <description>Natural (...surgically harvested...) human arm.</description>
+    <defName>PoorlyHarvestedNaturalArm</defName>
+    <label>poorly harvested arm</label>
+    <description>Natural (...brutaly harvested...) human arm.</description>
     <graphicData>
       <texPath>Things/Item/BodyPart/Organ</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>100</MarketValue>
     </statBases>
   </ThingDef>
 

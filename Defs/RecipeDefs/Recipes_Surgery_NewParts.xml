@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef Abstract="True" Name="SurgeryFlesh">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+  </RecipeDef>
+  <!-- natural -->
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallPoorlyHarvestedNaturalLeg</defName>
+    <label>install poorly harvested leg</label>
+    <description>Installs poorly harvested leg.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing poorly harvested leg.</jobString>
+    <workAmount>2000</workAmount>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PoorlyHarvestedNaturalLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>PoorlyHarvestedNaturalLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+			<li>LeftLeg</li>
+			<li>RightLeg</li>
+		</appliedOnFixedBodyParts>
+    <addsHediff>PoorlyHarvestedNaturalLeg</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallPoorlyHarvestedNaturalArm</defName>
+		<label>install poorly harvested arm</label>
+		<description>Installs poorly harvested arm.</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Installing poorly harvested arm.</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PoorlyHarvestedNaturalArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+			<thingDefs>
+				<li>PoorlyHarvestedNaturalArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+			<li>LeftShoulder</li>
+			<li>RightShoulder</li>
+		</appliedOnFixedBodyParts>
+    <addsHediff>PoorlyHarvestedNaturalArm</addsHediff>
+	</RecipeDef>
+
+
+	<!-- artificial -->
+
+</RecipeDefs>

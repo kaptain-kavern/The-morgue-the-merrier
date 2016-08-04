@@ -18,7 +18,7 @@
   <staticSunShadowHeight>0.20</staticSunShadowHeight>
   <minifiedDef>MinifiedFurniture</minifiedDef>
 </ThingDef>
-  
+
 <ThingDef ParentName="BenchBase">
     <DefName>TableMorgueSlab</DefName>
     <label>morgue slab</label>
@@ -79,5 +79,5 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
   </ThingDef>
-   
+
 </ThingDefs>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Added body parts -->
+
+  <HediffDef Name="AddedBodyPartBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PoorlyHarvestedNaturalLeg</defName>
+    <label>poorly harvested leg</label>
+    <spawnThingOnRemoved>PoorlyHarvestedNaturalLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <isSolid>true</isSolid>
+      <partEfficiency>0.85</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PoorlyHarvestedNaturalArm</defName>
+    <label>poorly harvested arm</label>
+    <comps>
+      <li>
+        <compClass>HediffComp_VerbGiver</compClass>
+        <verbs>
+          <li>
+            <verbClass>Verb_MeleeAttack</verbClass>
+            <defaultCooldownTicks>100</defaultCooldownTicks>
+            <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
+            <meleeDamageDef>Blunt</meleeDamageDef>
+          </li>
+        </verbs>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>PoorlyHarvestedNaturalArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <isSolid>true</isSolid>
+      <partEfficiency>0.85</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+</Defs>

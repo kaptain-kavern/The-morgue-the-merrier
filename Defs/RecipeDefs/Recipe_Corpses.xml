@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <RecipeDefs>
-
   <RecipeDef>
-    <defName>HarvestLimbsFromBBag</defName>
-    <label>Harvesting Limbs</label>
-    <description>Harvest 2 legs and 2 arms</description>
+    <defName>PoorlyHarvestLimbsFromBBag</defName>
+    <label>poorly harvesting limbs</label>
+    <description>Harvest poorly 2 legs and 2 arms. The limbs will be damaged in the process as the surgeon (who said butcher?) will try to save the maximum amount of them from a damaged body.</description>
     <jobString>chopping limbs.</jobString>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
-    <recipeUsers><li>TableMorgueSlab</li></recipeUsers> 
+    <recipeUsers><li>TableMorgueSlab</li></recipeUsers>
     <workAmount>800</workAmount>
     <ingredients>
       <li>
@@ -27,12 +25,12 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <NaturalLeg>2</NaturalLeg>
-      <NaturalArm>2</NaturalArm>
+      <PoorlyHarvestedNaturalLeg>2</PoorlyHarvestedNaturalLeg>
+      <PoorlyHarvestedNaturalArm>2</PoorlyHarvestedNaturalArm>
     </products>
     <skillRequirements>
       <li>
-        <skill>Medecine</skill>
+        <skill>Medicine</skill>
         <minLevel>8</minLevel>
       </li>
     </skillRequirements>
