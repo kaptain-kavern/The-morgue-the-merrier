@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
   <RecipeDef>
-    <defName>PoorlyHarvestLimbsFromBBag</defName>
+    <defName>PoorlyHarvestLegsFromBBag</defName>
     <label>poorly harvesting limbs</label>
-    <description>Harvest poorly 2 legs and 2 arms. The limbs will be damaged in the process as the surgeon (who said butcher?) will try to save the maximum amount of them from a damaged body.</description>
+    <description>Harvest/Recover 2 legs from 10 bagged bodies. You need that much because the limbs will be damaged in the process as the surgeon (who said butcher?) will try to save the maximum amount of "working material" from damaged bodies.</description>
     <jobString>chopping limbs.</jobString>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
     <effectWorking>ButcherFlesh</effectWorking>
@@ -17,6 +17,7 @@
             <li>BodyBagFilled</li>
           </thingDefs>
         </filter>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -26,6 +27,42 @@
     </fixedIngredientFilter>
     <products>
       <PoorlyHarvestedNaturalLeg>2</PoorlyHarvestedNaturalLeg>
+    </products>
+    <skillRequirements>
+      <li>
+        <skill>Medicine</skill>
+        <minLevel>8</minLevel>
+      </li>
+    </skillRequirements>
+    <workSkill>Medicine</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PoorlyHarvestArmsFromBBag</defName>
+    <label>poorly harvesting limbs</label>
+    <description>Harvest/Recover 2 arms from 10 bagged bodies. You need that much because the limbs will be damaged in the process as the surgeon (who said butcher?) will try to save the maximum amount of "working material" from damaged bodies.</description>
+    <jobString>chopping limbs.</jobString>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <recipeUsers><li>TableMorgueSlab</li></recipeUsers>
+    <workAmount>800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BodyBagFilled</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BodyBagFilled</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
       <PoorlyHarvestedNaturalArm>2</PoorlyHarvestedNaturalArm>
     </products>
     <skillRequirements>
