@@ -6,6 +6,10 @@
     <hediffClass>Hediff_AddedPart</hediffClass>
     <defaultLabelColor>(0.1, 0.16, 0)</defaultLabelColor>
     <isBad>false</isBad>
+    <addedPartProps>
+      <isSolid>true</isSolid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
     <comps>
       <li>
         <compClass>HediffComp_Disappears</compClass>
@@ -14,15 +18,23 @@
           <max>900000</max>
         </disappearsAfterTicks>
       </li>
-    </HediffDef>
+    </comp>
+    <stages>
+      <li>
+        <label>Stade 1</label>
+      </li>
+      <li>
+        <label>Stade 2</label>
+      </li>
+      <li>
+        <label>Stade 3</label>
+      </li>
+    </stages>
+  </HediffDef>
 
   <HediffDef ParentName="AddedPutrefyingBodyPartBase">
     <defName>PoorlyHarvestedNaturalLeg</defName>
     <label>poorly harvested leg</label>
-    <addedPartProps>
-      <isSolid>true</isSolid>
-      <partEfficiency>0.85</partEfficiency>
-    </addedPartProps>
   </HediffDef>
 
   <HediffDef ParentName="AddedPutrefyingBodyPartBase">
@@ -41,10 +53,6 @@
         </verbs>
       </li>
     </comps>
-    <addedPartProps>
-      <isSolid>true</isSolid>
-      <partEfficiency>0.85</partEfficiency>
-    </addedPartProps>
   </HediffDef>
 
 </Defs>
