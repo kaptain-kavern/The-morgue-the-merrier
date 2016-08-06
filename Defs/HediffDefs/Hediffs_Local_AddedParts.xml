@@ -4,7 +4,7 @@
 
   <HediffDef Name="AddedPutrefyingBodyPartBase" Abstract="True">
     <hediffClass>Hediff_AddedPart</hediffClass>
-    <defaultLabelColor>(0.1, 0.16, 0)</defaultLabelColor>
+    <defaultLabelColor>(0.36, 0.57, 0)</defaultLabelColor>
     <isBad>false</isBad>
     <addedPartProps>
       <isSolid>true</isSolid>
@@ -18,16 +18,73 @@
           <max>900000</max>
         </disappearsAfterTicks>
       </li>
-    </comp>
+    </comps>
     <stages>
       <li>
-        <label>Stade 1</label>
+        <label>Stade 1 : Spoil</label>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
       </li>
+
       <li>
-        <label>Stade 2</label>
+        <label>Stade 2 : Stink</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
       </li>
+
       <li>
-        <label>Stade 3</label>
+        <label>Stade 3 : decay</label>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Stade 4 : decompose</label>
+        <minSeverity>0.6</minSeverity>
+        <vomitMtbDays>0.125</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Stade 5 : rotting</label>
+        <minSeverity>0.85</minSeverity>
+        <vomitMtbDays>0.3</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>Carcinoma</hediff>
+            <mtbDays>600</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
