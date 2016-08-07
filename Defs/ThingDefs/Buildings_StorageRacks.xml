@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
-
+<!-- Abstract -->
   <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
     <comps>
       <li>
@@ -22,6 +22,7 @@
     <holdsRoof>true</holdsRoof>
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
+    <DesignationCategory>Storage</DesignationCategory>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
@@ -42,9 +43,30 @@
     </inspectorTabs>
   </ThingDef>
 
+  <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CommunityCoreLibrary.CompRefrigerated</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
+        <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+        <idlePowerFactor>0.25</idlePowerFactor>
+        <operationalMode>Cycle</operationalMode>
+        <cycleLowTicks>2500</cycleLowTicks>
+        <cycleHighTicks>1500</cycleHighTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Normal Racks -->
+
  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackSingle</defName>
-    <label>Single storage rack</label>    
+    <label>Single storage rack</label>
     <graphicData>
       <texPath>Things/Buildings/Furniture/StorageSingle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -99,7 +121,7 @@
     <size>(3,1)</size>
   </ThingDef>
 
-  
+
    <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackLarge</defName>
     <label>Large storage rack</label>
@@ -107,7 +129,7 @@
       <texPath>Things/Buildings/Furniture/StorageLarge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,1)</drawSize>
-    </graphicData>    
+    </graphicData>
     <costStuffCount>60</costStuffCount>
 	<costList>
       <Steel>4</Steel>
@@ -118,9 +140,9 @@
     </statBases>
     <size>(4,1)</size>
   </ThingDef>
-  
+
   <!-- Doubles -->
-  
+
   <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackSmallD</defName>
     <label>Small double storage rack</label>
@@ -128,7 +150,7 @@
       <texPath>Things/Buildings/Furniture/StorageSmallD</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
-    </graphicData>    
+    </graphicData>
     <costStuffCount>60</costStuffCount>
 	<costList>
       <Steel>4</Steel>
@@ -159,7 +181,7 @@
     <size>(3,2)</size>
   </ThingDef>
 
-  
+
    <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackLargeD</defName>
     <label>Large double storage rack</label>
@@ -178,4 +200,7 @@
     </statBases>
     <size>(4,2)</size>
   </ThingDef>
+
+<!-- Refrigerated Racks -->
+
 </Buildings>
