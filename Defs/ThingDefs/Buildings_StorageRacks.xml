@@ -37,6 +37,20 @@
     <pathCost>125</pathCost>
     <building>
       <preventDeterioration>true</preventDeterioration>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <exceptedCategories>
+    				<li>Corpses</li>
+            <li>Chunks</li>
+    			</exceptedCategories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
     </building>
     <inspectorTabs>
       <li>ITab_Storage</li>
