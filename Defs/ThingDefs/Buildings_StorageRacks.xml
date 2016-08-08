@@ -64,7 +64,7 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
+        <basePowerConsumption>150</basePowerConsumption>
       </li>
       <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
         <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
@@ -73,12 +73,21 @@
         <cycleLowTicks>2500</cycleLowTicks>
         <cycleHighTicks>1500</cycleHighTicks>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>
     </comps>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
   </ThingDef>
 
 <!-- Normal Racks -->
 
- <ThingDef ParentName="StorageRackBase">
+  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackSingle</defName>
     <label>Single storage rack</label>
     <graphicData>
@@ -116,7 +125,7 @@
     <size>(2,1)</size>
   </ThingDef>
 
-   <ThingDef ParentName="StorageRackBase">
+  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackMedium</defName>
     <label>Medium storage rack</label>
     <graphicData>
@@ -125,18 +134,17 @@
       <drawSize>(3,1)</drawSize>
     </graphicData>
     <costStuffCount>45</costStuffCount>
-	<costList>
+    <costList>
       <Steel>3</Steel>
     </costList>
-	<statBases>
+    <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToMake>1050</WorkToMake>
     </statBases>
     <size>(3,1)</size>
   </ThingDef>
 
-
-   <ThingDef ParentName="StorageRackBase">
+  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackLarge</defName>
     <label>Large storage rack</label>
     <graphicData>
@@ -145,17 +153,17 @@
       <drawSize>(4,1)</drawSize>
     </graphicData>
     <costStuffCount>60</costStuffCount>
-	<costList>
+    <costList>
       <Steel>4</Steel>
     </costList>
-	<statBases>
+    <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <WorkToMake>1400</WorkToMake>
     </statBases>
     <size>(4,1)</size>
   </ThingDef>
 
-  <!-- Doubles -->
+          <!-- Doubles -->
 
   <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackSmallD</defName>
@@ -166,17 +174,17 @@
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <costStuffCount>60</costStuffCount>
-	<costList>
+    <costList>
       <Steel>4</Steel>
     </costList>
-	<statBases>
+    <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <WorkToMake>1400</WorkToMake>
     </statBases>
     <size>(2,2)</size>
   </ThingDef>
 
-   <ThingDef ParentName="StorageRackBase">
+  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackMediumD</defName>
     <label>Medium double storage rack</label>
     <graphicData>
@@ -185,18 +193,17 @@
       <drawSize>(3,2)</drawSize>
     </graphicData>
     <costStuffCount>90</costStuffCount>
-	<costList>
+    <costList>
       <Steel>6</Steel>
     </costList>
-	<statBases>
+    <statBases>
       <MaxHitPoints>600</MaxHitPoints>
       <WorkToMake>2100</WorkToMake>
     </statBases>
     <size>(3,2)</size>
   </ThingDef>
 
-
-   <ThingDef ParentName="StorageRackBase">
+  <ThingDef ParentName="StorageRackBase">
     <defName>StorageRackLargeD</defName>
     <label>Large double storage rack</label>
     <graphicData>
@@ -205,10 +212,10 @@
       <drawSize>(4,2)</drawSize>
     </graphicData>
     <costStuffCount>120</costStuffCount>
-	<costList>
+    <costList>
       <Steel>8</Steel>
     </costList>
-	<statBases>
+    <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <WorkToMake>2800</WorkToMake>
     </statBases>
@@ -216,5 +223,147 @@
   </ThingDef>
 
 <!-- Refrigerated Racks -->
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackSingle</defName>
+  <label>Single refrigerated storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingle</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(1,1)</drawSize>
+  </graphicData>
+  <costStuffCount>15</costStuffCount>
+  <costList>
+    <Steel>1</Steel>
+    <Component>1</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>350</WorkToMake>
+  </statBases>
+  <size>(1,1)</size>
+</ThingDef>
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackSmall</defName>
+  <label>Small refrigerated storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,1)</drawSize>
+  </graphicData>
+  <costStuffCount>30</costStuffCount>
+  <costList>
+    <Steel>2</Steel>
+    <Component>1</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>200</MaxHitPoints>
+    <WorkToMake>700</WorkToMake>
+  </statBases>
+  <size>(2,1)</size>
+</ThingDef>
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackMedium</defName>
+  <label>Medium refrigerated storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageMedium</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,1)</drawSize>
+  </graphicData>
+  <costStuffCount>45</costStuffCount>
+  <costList>
+    <Steel>3</Steel>
+    <Component>1</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>300</MaxHitPoints>
+    <WorkToMake>1050</WorkToMake>
+  </statBases>
+  <size>(3,1)</size>
+</ThingDef>
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackLarge</defName>
+  <label>Large refrigerated storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageLarge</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(4,1)</drawSize>
+  </graphicData>
+  <costStuffCount>60</costStuffCount>
+  <costList>
+    <Steel>4</Steel>
+    <Component>1</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>400</MaxHitPoints>
+    <WorkToMake>1400</WorkToMake>
+  </statBases>
+  <size>(4,1)</size>
+</ThingDef>
+
+        <!-- Doubles -->
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackSmallD</defName>
+  <label>Small refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,2)</drawSize>
+  </graphicData>
+  <costStuffCount>60</costStuffCount>
+  <costList>
+    <Steel>4</Steel>
+    <Component>2</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>400</MaxHitPoints>
+    <WorkToMake>1400</WorkToMake>
+  </statBases>
+  <size>(2,2)</size>
+</ThingDef>
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackMediumD</defName>
+  <label>Medium refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,2)</drawSize>
+  </graphicData>
+  <costStuffCount>90</costStuffCount>
+  <costList>
+    <Steel>6</Steel>
+    <Component>2</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>600</MaxHitPoints>
+    <WorkToMake>2100</WorkToMake>
+  </statBases>
+  <size>(3,2)</size>
+</ThingDef>
+
+<ThingDef ParentName="StorageRackRefrigerated">
+  <defName>StorageRackLargeD</defName>
+  <label>Large refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(4,2)</drawSize>
+  </graphicData>
+  <costStuffCount>120</costStuffCount>
+  <costList>
+    <Steel>8</Steel>
+    <Component>2</Component>
+  </costList>
+  <statBases>
+    <MaxHitPoints>800</MaxHitPoints>
+    <WorkToMake>2800</WorkToMake>
+  </statBases>
+  <size>(4,2)</size>
+</ThingDef>
 
 </Buildings>
