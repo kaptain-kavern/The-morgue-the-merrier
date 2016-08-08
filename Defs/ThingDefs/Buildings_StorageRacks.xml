@@ -225,7 +225,7 @@
 <!-- Refrigerated Racks -->
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackSingle</defName>
+  <defName>RefrigeratedStorageRackSingle</defName>
   <label>Single refrigerated storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingle</texPath>
@@ -245,7 +245,7 @@
 </ThingDef>
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackSmall</defName>
+  <defName>RefrigeratedStorageRackSmall</defName>
   <label>Small refrigerated storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmall</texPath>
@@ -265,7 +265,7 @@
 </ThingDef>
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackMedium</defName>
+  <defName>RefrigeratedStorageRackMedium</defName>
   <label>Medium refrigerated storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageMedium</texPath>
@@ -285,7 +285,7 @@
 </ThingDef>
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackLarge</defName>
+  <defName>RefrigeratedStorageRackLarge</defName>
   <label>Large refrigerated storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageLarge</texPath>
@@ -307,7 +307,7 @@
         <!-- Doubles -->
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackSmallD</defName>
+  <defName>RefrigeratedStorageRackSmallD</defName>
   <label>Small refrigerated double storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallD</texPath>
@@ -327,7 +327,7 @@
 </ThingDef>
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackMediumD</defName>
+  <defName>RefrigeratedStorageRackMediumD</defName>
   <label>Medium refrigerated double storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumD</texPath>
@@ -347,7 +347,7 @@
 </ThingDef>
 
 <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>StorageRackLargeD</defName>
+  <defName>RefrigeratedStorageRackLargeD</defName>
   <label>Large refrigerated double storage rack</label>
   <graphicData>
     <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeD</texPath>
