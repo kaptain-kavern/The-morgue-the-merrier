@@ -24,11 +24,6 @@ _Worth to note :_ Bagging a corpse **automatically strip it** (all you have to d
   - Add early wood fueled way of cremate bodies
     - Only for cremation and i would like it generate bad mood if cook has been prepared in this ceremonial/sacred building
 
-## Also add :
-(Maybe I should release them alone)
-- Series of multi-purpose racked storage in several shapes. They also should support roof as a wall (for your very big storage urges).![Large rack storage](../Textures/Things/Buildings/Furniture/StorageLarge.png)
-- A neon lamp
-
 ## Wild unorganised notes
 - Maybe add a way to reclaim dirty/used bags and clean/rehabilitate them
 - Bagged bodies should be able to be used in hoppers in order to be automatically used in different to-be-define contraptions
